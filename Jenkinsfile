@@ -4,7 +4,7 @@ node
 
     docker.withRegistry('https://registry.hub.docker.com','dockerhubcreds')
     {
-        def img = docker.build("icecold/service2:${env.BUILD_ID}");
+        def img = docker.build("icecoldrax/service2:${env.BUILD_ID}");
         img.push();
     }
 }
